@@ -20,9 +20,9 @@ PROJECT SPECIFICATION
 5. The layout contains a ‘reset’ button.
 
 6. The code adheres to all of the following best practices:
-   . Text sizes are defined in sp
-   . Lengths are defined in dp
-   . Padding and margin is used appropriately, such that the views are not crammed up against each other.
+   * Text sizes are defined in sp
+   * Lengths are defined in dp
+   * Padding and margin is used appropriately, such that the views are not crammed up against each other.
    
 7. Each score button updates the score TextView in its column by adding the correct number of points.
 
