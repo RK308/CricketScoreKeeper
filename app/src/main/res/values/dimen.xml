@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="titleSize">25sp</dimen>
+    <dimen name="titleLeftMargin">14dp</dimen>
+    <dimen name="scoreSize">40sp</dimen>
+    <dimen name="buttonTextSize">20sp</dimen>
+    <dimen name="buttonBottomMargin">5dp</dimen>
+    <dimen name="scoreLeftMargin">20dp</dimen>
+    <dimen name="teamBScoreLeftMargin">20dp</dimen>
+    <dimen name="teamBLeftMargin">3dp</dimen>
+    <dimen name="teamALeftMargin">30dp</dimen>
+    <dimen name="teamTopMargin">125dp</dimen>
+    <dimen name="buttonLeftMargin">20dp</dimen>
+
+    <!-- Landscape Mode -->
+    <dimen name="landTeamALeftMargin">10dp</dimen>
+    <dimen name="landTeamTopMargin">50dp</dimen>
+</resources>

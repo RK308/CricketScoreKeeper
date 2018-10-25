@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">CricketScoreKeeper</string>
+    <string name="title">One Day International Cricket</string>
+    <string name="teamA">ENGLAND</string>
+    <string name="teamB">AUSTRALIA</string>
+    <string name="scoreA">0</string>
+    <string name="slash">/</string>
+    <string name="englWicketScore">0</string>
+    <string name="scoreB">0</string>
+    <string name="ausWicketScore">0</string>
+    <string name="button1">Runs</string>
+    <string name="button2">4s</string>
+    <string name="button3">6s</string>
+    <string name="button5">Wickets</string>
+    <string name="runs">R</string>
+    <string name="fours">4s</string>
+    <string name="sixes">6s</string>
+    <string name="reset">Reset</string>
+    <string name="noOfRuns">0</string>
+    <string name="noOfBalls">0</string>
+    <string name="noOfFours">0</string>
+    <string name="noOfSixes">0</string>
+    <string name="toast_game_over">All Out!.....Game Over</string>
+</resources>

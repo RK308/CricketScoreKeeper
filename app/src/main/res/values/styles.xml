@@ -1,0 +1,93 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+    <!-- Style for Portriat Mode -->
+    <style name="titleStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/titleSize</item>
+        <item name="android:textColor">@color/titleColor</item>
+        <item name="android:fontFamily" tools:targetApi="16">sans-serif-medium</item>
+        <item name="android:layout_marginLeft">@dimen/titleLeftMargin</item>
+    </style>
+
+    <style name="teamStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/titleSize</item>
+        <item name="android:fontFamily" tools:targetApi="16">sans-serif-medium</item>
+        <item name="android:layout_marginTop">@dimen/teamTopMargin</item>
+    </style>
+
+    <style name="teamScoreStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/scoreSize</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:fontFamily" tools:targetApi="16">sans-serif-light</item>
+    </style>
+
+    <style name="teamAButtonStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginBottom">@dimen/buttonBottomMargin</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/buttonTextSize</item>
+        <item name="android:background">@color/teamAButtonColor</item>
+        <item name="android:textColor">@color/teamAButtonTextColor</item>
+    </style>
+
+    <style name="teamBButtonStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginBottom">@dimen/buttonBottomMargin</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/buttonTextSize</item>
+        <item name="android:background">@color/teamBButtonColor</item>
+        <item name="android:textColor">@color/teamBButtonTextColor</item>
+    </style>
+
+    <style name="resetButtonStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginBottom">@dimen/titleLeftMargin</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/buttonTextSize</item>
+        <item name="android:background">@color/resetButtonColor</item>
+        <item name="android:textColor">@color/titleColor</item>
+    </style>
+
+    <style name="titleScoreCardStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/buttonTextSize</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="finalScoreCardStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/buttonTextSize</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Style for Landscape Mode -->
+    <style name="landTeamStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/titleSize</item>
+        <item name="android:fontFamily" tools:targetApi="16">sans-serif-medium</item>
+        <item name="android:layout_marginTop">@dimen/landTeamTopMargin</item>
+    </style>
+</resources>

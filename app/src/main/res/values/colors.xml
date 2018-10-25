@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="teamAButtonColor">#1a237e</color>
+    <color name="teamBButtonColor">#1b5e20</color>
+    <color name="resetButtonColor">#76FF03</color>
+    <color name="teamAButtonTextColor">#76FF03</color>
+    <color name="teamBButtonTextColor">#FFFF00</color>
+    <color name="titleColor">#3E2723</color>
+    <color name="teamAColor">#1a237e</color>
+    <color name="teamBcolor">#1b5e20</color>
+</resources>

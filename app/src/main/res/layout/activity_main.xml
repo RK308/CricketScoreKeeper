@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.cricketscorekeeper.MainActivity">
+
+
+    <pl.droidsonroids.gif.GifTextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/animated_cricket" />
+
+    <TextView
+        style="@style/titleStyle"
+        android:text="@string/title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/teamStyle"
+                android:layout_marginLeft="@dimen/teamALeftMargin"
+                android:gravity="center_horizontal"
+                android:textColor="@color/teamAColor"
+                android:text="@string/teamA" />
+            <TextView
+                android:id="@+id/england_score"
+                style="@style/teamScoreStyle"
+                android:textColor="@color/teamAColor"
+                android:text="@string/scoreA" />
+            <Button
+                style="@style/teamAButtonStyle"
+                android:onClick="addOnePointForEngland"
+                android:text="@string/button1" />
+
+            <Button
+                style="@style/teamAButtonStyle"
+                android:onClick="addFourPointsForEngland"
+                android:text="@string/button2" />
+
+            <Button
+                style="@style/teamAButtonStyle"
+                android:onClick="addSixPointsForEngland"
+                android:text="@string/button3" />
+
+            <Button
+                style="@style/teamAButtonStyle"
+                android:onClick="addWicketsForEngland"
+                android:text="@string/button5" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/titleScoreCardStyle"
+                        android:layout_marginLeft="@dimen/scoreLeftMargin"
+                        android:textColor="@color/teamAColor"
+                        android:text="@string/runs" />
+
+                    <TextView
+                        android:id="@+id/eng_runs"
+                        style="@style/finalScoreCardStyle"
+                        android:layout_marginLeft="15dp"
+                        android:textColor="@color/teamAColor"
+                        android:text="@string/noOfRuns" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/titleScoreCardStyle"
+                        android:layout_marginLeft="@dimen/scoreLeftMargin"
+                        android:textColor="@color/teamAColor"
+                        android:text="@string/fours" />
+
+                    <TextView
+                        android:id="@+id/eng_fours"
+                        style="@style/finalScoreCardStyle"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="@color/teamAColor"
+                        android:text="@string/noOfFours" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/titleScoreCardStyle"
+                        android:layout_marginLeft="@dimen/scoreLeftMargin"
+                        android:textColor="@color/teamAColor"
+                        android:text="@string/sixes" />
+
+                    <TextView
+                        android:id="@+id/eng_sixes"
+                        style="@style/finalScoreCardStyle"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="@color/teamAColor"
+                        android:text="@string/noOfSixes" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/teamStyle"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/teamBLeftMargin"
+                android:textColor="@color/teamBcolor"
+                android:text="@string/teamB" />
+                <TextView
+                    android:id="@+id/aus_score"
+                    style="@style/teamScoreStyle"
+                    android:layout_marginLeft="0dp"
+                    android:textColor="@color/teamBcolor"
+                    android:text="@string/scoreB" />
+            <Button
+                style="@style/teamBButtonStyle"
+                android:onClick="addOnePointForAus"
+                android:text="@string/button1" />
+
+            <Button
+                style="@style/teamBButtonStyle"
+                android:onClick="addFourPointsForAus"
+                android:text="@string/button2" />
+
+            <Button
+                style="@style/teamBButtonStyle"
+                android:onClick="addSixPointsForAus"
+                android:text="@string/button3" />
+
+            <Button
+                style="@style/teamBButtonStyle"
+                android:onClick="addWicketsForAus"
+                android:text="@string/button5" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/titleScoreCardStyle"
+                        android:layout_marginLeft="@dimen/teamBScoreLeftMargin"
+                        android:textColor="@color/teamBcolor"
+                        android:text="@string/runs" />
+
+                    <TextView
+                        android:id="@+id/aus_runs"
+                        style="@style/finalScoreCardStyle"
+                        android:layout_marginLeft="15dp"
+                        android:textColor="@color/teamBcolor"
+                        android:text="@string/noOfRuns" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/titleScoreCardStyle"
+                        android:layout_marginLeft="@dimen/teamBScoreLeftMargin"
+                        android:textColor="@color/teamBcolor"
+                        android:text="@string/fours" />
+
+                    <TextView
+                        android:id="@+id/aus_fours"
+                        style="@style/finalScoreCardStyle"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="@color/teamBcolor"
+                        android:text="@string/noOfFours" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/titleScoreCardStyle"
+                        android:layout_marginLeft="@dimen/teamBScoreLeftMargin"
+                        android:textColor="@color/teamBcolor"
+                        android:text="@string/sixes" />
+
+                    <TextView
+                        android:id="@+id/aus_sixes"
+                        style="@style/finalScoreCardStyle"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="@color/teamBcolor"
+                        android:text="@string/noOfSixes" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        style="@style/resetButtonStyle"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:onClick="reset"
+        android:text="@string/reset" />
+</RelativeLayout>
