@@ -31,6 +31,6 @@ PROJECT SPECIFICATION
 
 
 # Cricket Score Keeper App 
-<img src="https://user-images.githubusercontent.com/38148871/47831201-ecdad580-dd65-11e8-87e7-8901f454ece8.png" width=250> <img src="https://user-images.githubusercontent.com/38148871/47831202-ecdad580-dd65-11e8-9686-2ebdea5a6f37.png" width=250> <img src="https://user-images.githubusercontent.com/38148871/47831203-ecdad580-dd65-11e8-9179-6d6429bb6ac5.png" width=250>
+<img src="https://user-images.githubusercontent.com/38148871/47831201-ecdad580-dd65-11e8-87e7-8901f454ece8.png" width=250>     <img src="https://user-images.githubusercontent.com/38148871/47831202-ecdad580-dd65-11e8-9686-2ebdea5a6f37.png" width=250>     <img src="https://user-images.githubusercontent.com/38148871/47831203-ecdad580-dd65-11e8-9179-6d6429bb6ac5.png" width=250>
 
 
