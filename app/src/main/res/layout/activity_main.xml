@@ -61,7 +61,7 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
+                android:layout_marginLeft="@dimen/bottomScoreBoardHorizontalLeftMargin"
                 android:orientation="horizontal">
 
                 <LinearLayout
@@ -79,7 +79,7 @@
                     <TextView
                         android:id="@+id/eng_runs"
                         style="@style/finalScoreCardStyle"
-                        android:layout_marginLeft="15dp"
+                        android:layout_marginLeft="@dimen/runsLeftMargin"
                         android:textColor="@color/teamAColor"
                         android:text="@string/noOfRuns" />
                 </LinearLayout>
@@ -99,7 +99,7 @@
                     <TextView
                         android:id="@+id/eng_fours"
                         style="@style/finalScoreCardStyle"
-                        android:layout_marginLeft="20dp"
+                        android:layout_marginLeft="@dimen/scoreLeftMargin"
                         android:textColor="@color/teamAColor"
                         android:text="@string/noOfFours" />
                 </LinearLayout>
@@ -119,7 +119,7 @@
                     <TextView
                         android:id="@+id/eng_sixes"
                         style="@style/finalScoreCardStyle"
-                        android:layout_marginLeft="20dp"
+                        android:layout_marginLeft="@dimen/scoreLeftMargin"
                         android:textColor="@color/teamAColor"
                         android:text="@string/noOfSixes" />
                 </LinearLayout>
@@ -167,13 +167,13 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
+                android:layout_marginLeft="@dimen/bottomScoreBoardHorizontalLeftMargin"
                 android:orientation="horizontal">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="5dp"
+                    android:layout_margin="@dimen/bottomScoreBoardVerticalMargin"
                     android:orientation="vertical">
 
                     <TextView
@@ -185,7 +185,7 @@
                     <TextView
                         android:id="@+id/aus_runs"
                         style="@style/finalScoreCardStyle"
-                        android:layout_marginLeft="15dp"
+                        android:layout_marginLeft="@dimen/runsLeftMargin"
                         android:textColor="@color/teamBcolor"
                         android:text="@string/noOfRuns" />
                 </LinearLayout>
@@ -193,7 +193,7 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="5dp"
+                    android:layout_margin="@dimen/bottomScoreBoardVerticalMargin"
                     android:orientation="vertical">
 
                     <TextView
@@ -205,7 +205,7 @@
                     <TextView
                         android:id="@+id/aus_fours"
                         style="@style/finalScoreCardStyle"
-                        android:layout_marginLeft="20dp"
+                        android:layout_marginLeft="@dimen/teamBScoreLeftMargin"
                         android:textColor="@color/teamBcolor"
                         android:text="@string/noOfFours" />
                 </LinearLayout>
@@ -213,7 +213,7 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="5dp"
+                    android:layout_margin="@dimen/bottomScoreBoardVerticalMargin"
                     android:orientation="vertical">
 
                     <TextView
@@ -225,7 +225,7 @@
                     <TextView
                         android:id="@+id/aus_sixes"
                         style="@style/finalScoreCardStyle"
-                        android:layout_marginLeft="20dp"
+                        android:layout_marginLeft="@dimen/teamBScoreLeftMargin"
                         android:textColor="@color/teamBcolor"
                         android:text="@string/noOfSixes" />
                 </LinearLayout>

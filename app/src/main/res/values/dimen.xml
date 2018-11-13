@@ -5,14 +5,21 @@
     <dimen name="scoreSize">40sp</dimen>
     <dimen name="buttonTextSize">20sp</dimen>
     <dimen name="buttonBottomMargin">5dp</dimen>
-    <dimen name="scoreLeftMargin">20dp</dimen>
-    <dimen name="teamBScoreLeftMargin">20dp</dimen>
+    <dimen name="scoreLeftMargin">15dp</dimen>
+    <dimen name="teamBScoreLeftMargin">15dp</dimen>
     <dimen name="teamBLeftMargin">3dp</dimen>
     <dimen name="teamALeftMargin">30dp</dimen>
     <dimen name="teamTopMargin">125dp</dimen>
     <dimen name="buttonLeftMargin">20dp</dimen>
+    <dimen name="bottomScoreBoardHorizontalLeftMargin">20dp</dimen>
+    <dimen name="bottomScoreBoardVerticalMargin">5dp</dimen>
+    <dimen name="runsLeftMargin">10dp</dimen>
 
     <!-- Landscape Mode -->
-    <dimen name="landTeamALeftMargin">10dp</dimen>
+    <dimen name="landTeamLeftMargin">80dp</dimen>
     <dimen name="landTeamTopMargin">50dp</dimen>
+    <dimen name="landTitleLeftMargin">120dp</dimen>
+    <dimen name="landScoreLeftMargin">15dp</dimen>
+    <dimen name="landRunsLeftMargin">10dp</dimen>
+    <dimen name="landButtonBottomMargin">15dp</dimen>
 </resources>

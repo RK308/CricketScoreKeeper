@@ -52,15 +52,16 @@ public class MainActivity extends AppCompatActivity {
     /* Count the number of wickets for England */
     public void addWicketsForEngland(View view){
         wickets = wickets + 1;
-        // Check for number of wickets is less than 10
-        // if not will toast a message as game over.
+        // Check for number of wickets is less than or equal to 10
+        // and toast the message when the wickets is 10 as all out as per the cricket game rule.
+        // else will toast a message as game over by not allowing the user to increase the wickets.
         if (wickets < 10) {
             // will display till 9th wicket on the score board
             displayEngland(englScore, wickets);
-        } else {
-            // displayEngland() method is called in else block
-            // to display the 10th wicket on the score board.
+        } else if (wickets == 10){
             displayEngland(englScore, wickets);
+            Toast.makeText(this, R.string.toast_game_over, Toast.LENGTH_SHORT).show();
+        } else {
             Toast.makeText(this, R.string.toast_game_over, Toast.LENGTH_SHORT).show();
         }
     }
@@ -116,15 +117,16 @@ public class MainActivity extends AppCompatActivity {
     /* Count the number of wickets for Australia */
     public void addWicketsForAus(View view){
         ausWickets = ausWickets + 1;
-        // Check for number of wickets is less than 10
-        // if not will toast a message as game over.
+        // Check for number of wickets is less than or equal to 10
+        // and toast the message when the wickets is 10 as all out as per the cricket game rule.
+        // else will toast a message as game over by not allowing the user to increase the wickets.
         if (ausWickets < 10) {
             // will display till 9th wicket on the score board
             displayAus(ausScore,ausWickets);
-        } else {
-            // displayAus() method is called in else block
-            // to display the 10th wicket on the score board.
+        } else if (ausWickets == 10) {
             displayAus(ausScore,ausWickets);
+            Toast.makeText(this, R.string.toast_game_over, Toast.LENGTH_SHORT).show();
+        } else {
             Toast.makeText(this, R.string.toast_game_over, Toast.LENGTH_SHORT).show();
         }
     }

@@ -1,243 +1,255 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.android.cricketscorekeeper.MainActivity">
 
-
-    <pl.droidsonroids.gif.GifTextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/animated_cricket" />
+        android:layout_height="wrap_content" >
 
-    <TextView
-        style="@style/titleStyle"
-        android:text="@string/title"
-        android:gravity="center_horizontal"/>
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/animated_cricket" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal">
+        <TextView
+            style="@style/landTitleStyle"
+            android:text="@string/title" />
 
         <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical">
-
-            <TextView
-                style="@style/landTeamStyle"
-                android:layout_marginLeft="@dimen/landTeamALeftMargin"
-                android:layout_gravity="center_horizontal"
-                android:textColor="@color/teamAColor"
-                android:text="@string/teamA" />
-            <TextView
-                android:id="@+id/england_score"
-                style="@style/teamScoreStyle"
-                android:textColor="@color/teamAColor"
-                android:text="@string/scoreA" />
-            <Button
-                style="@style/teamAButtonStyle"
-                android:onClick="addOnePointForEngland"
-                android:text="@string/button1" />
-
-            <Button
-                style="@style/teamAButtonStyle"
-                android:onClick="addFourPointsForEngland"
-                android:text="@string/button2" />
-
-            <Button
-                style="@style/teamAButtonStyle"
-                android:onClick="addSixPointsForEngland"
-                android:text="@string/button3" />
-
-            <Button
-                style="@style/teamAButtonStyle"
-                android:onClick="addWicketsForEngland"
-                android:text="@string/button5" />
+            android:id="@+id/horizontal_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:orientation="horizontal">
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/landTeamStyle"
+                    android:layout_marginLeft="@dimen/landTitleLeftMargin"
+                    android:layout_marginStart="@dimen/landTeamLeftMargin"
+                    android:gravity="center_horizontal"
+                    android:text="@string/teamA"
+                    android:textColor="@color/teamAColor" />
+
+                <TextView
+                    android:id="@+id/england_score"
+                    style="@style/teamScoreStyle"
+                    android:text="@string/scoreA"
+                    android:textColor="@color/teamAColor" />
+
+                <Button
+                    style="@style/teamAButtonStyle"
+                    android:onClick="addOnePointForEngland"
+                    android:text="@string/button1" />
+
+                <Button
+                    style="@style/teamAButtonStyle"
+                    android:onClick="addFourPointsForEngland"
+                    android:text="@string/button2" />
+
+                <Button
+                    style="@style/teamAButtonStyle"
+                    android:onClick="addSixPointsForEngland"
+                    android:text="@string/button3" />
+
+                <Button
+                    style="@style/teamAButtonStyle"
+                    android:onClick="addWicketsForEngland"
+                    android:text="@string/button5" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="5dp"
-                    android:orientation="vertical">
+                    android:layout_marginLeft="@dimen/landTeamLeftMargin"
+                    android:orientation="horizontal">
 
-                    <TextView
-                        style="@style/titleScoreCardStyle"
-                        android:layout_marginLeft="@dimen/scoreLeftMargin"
-                        android:textColor="@color/teamAColor"
-                        android:text="@string/runs" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical">
 
-                    <TextView
-                        android:id="@+id/eng_runs"
-                        style="@style/finalScoreCardStyle"
-                        android:layout_marginLeft="15dp"
-                        android:textColor="@color/teamAColor"
-                        android:text="@string/noOfRuns" />
-                </LinearLayout>
+                        <TextView
+                            style="@style/titleScoreCardStyle"
+                            android:layout_marginLeft="@dimen/landScoreLeftMargin"
+                            android:text="@string/runs"
+                            android:textColor="@color/teamAColor" />
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="5dp"
-                    android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/eng_runs"
+                            style="@style/finalScoreCardStyle"
+                            android:layout_marginLeft="@dimen/landRunsLeftMargin"
+                            android:text="@string/noOfRuns"
+                            android:textColor="@color/teamAColor" />
+                    </LinearLayout>
 
-                    <TextView
-                        style="@style/titleScoreCardStyle"
-                        android:layout_marginLeft="@dimen/scoreLeftMargin"
-                        android:textColor="@color/teamAColor"
-                        android:text="@string/fours" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical">
 
-                    <TextView
-                        android:id="@+id/eng_fours"
-                        style="@style/finalScoreCardStyle"
-                        android:layout_marginLeft="20dp"
-                        android:textColor="@color/teamAColor"
-                        android:text="@string/noOfFours" />
-                </LinearLayout>
+                        <TextView
+                            style="@style/titleScoreCardStyle"
+                            android:layout_marginLeft="@dimen/landScoreLeftMargin"
+                            android:text="@string/fours"
+                            android:textColor="@color/teamAColor" />
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="5dp"
-                    android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/eng_fours"
+                            style="@style/finalScoreCardStyle"
+                            android:layout_marginLeft="@dimen/landScoreLeftMargin"
+                            android:text="@string/noOfFours"
+                            android:textColor="@color/teamAColor" />
+                    </LinearLayout>
 
-                    <TextView
-                        style="@style/titleScoreCardStyle"
-                        android:layout_marginLeft="@dimen/scoreLeftMargin"
-                        android:textColor="@color/teamAColor"
-                        android:text="@string/sixes" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical">
 
-                    <TextView
-                        android:id="@+id/eng_sixes"
-                        style="@style/finalScoreCardStyle"
-                        android:layout_marginLeft="20dp"
-                        android:textColor="@color/teamAColor"
-                        android:text="@string/noOfSixes" />
+                        <TextView
+                            style="@style/titleScoreCardStyle"
+                            android:layout_marginLeft="@dimen/landScoreLeftMargin"
+                            android:text="@string/sixes"
+                            android:textColor="@color/teamAColor" />
+
+                        <TextView
+                            android:id="@+id/eng_sixes"
+                            style="@style/finalScoreCardStyle"
+                            android:layout_marginLeft="@dimen/landScoreLeftMargin"
+                            android:text="@string/noOfSixes"
+                            android:textColor="@color/teamAColor" />
+                    </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
-        </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
 
-            <TextView
-                style="@style/teamStyle"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginLeft="@dimen/teamBLeftMargin"
-                android:textColor="@color/teamBcolor"
-                android:text="@string/teamB" />
+                <TextView
+                    style="@style/landTeamStyle"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/teamBLeftMargin"
+                    android:text="@string/teamB"
+                    android:textColor="@color/teamBcolor" />
+
                 <TextView
                     android:id="@+id/aus_score"
                     style="@style/teamScoreStyle"
                     android:layout_marginLeft="0dp"
-                    android:textColor="@color/teamBcolor"
-                    android:text="@string/scoreB" />
-            <Button
-                style="@style/teamBButtonStyle"
-                android:onClick="addOnePointForAus"
-                android:text="@string/button1" />
+                    android:text="@string/scoreB"
+                    android:textColor="@color/teamBcolor" />
 
-            <Button
-                style="@style/teamBButtonStyle"
-                android:onClick="addFourPointsForAus"
-                android:text="@string/button2" />
+                <Button
+                    style="@style/teamBButtonStyle"
+                    android:onClick="addOnePointForAus"
+                    android:text="@string/button1" />
 
-            <Button
-                style="@style/teamBButtonStyle"
-                android:onClick="addSixPointsForAus"
-                android:text="@string/button3" />
+                <Button
+                    style="@style/teamBButtonStyle"
+                    android:onClick="addFourPointsForAus"
+                    android:text="@string/button2" />
 
-            <Button
-                style="@style/teamBButtonStyle"
-                android:onClick="addWicketsForAus"
-                android:text="@string/button5" />
+                <Button
+                    style="@style/teamBButtonStyle"
+                    android:onClick="addSixPointsForAus"
+                    android:text="@string/button3" />
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:orientation="horizontal">
+                <Button
+                    style="@style/teamBButtonStyle"
+                    android:onClick="addWicketsForAus"
+                    android:text="@string/button5" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="5dp"
-                    android:orientation="vertical">
+                    android:layout_marginLeft="@dimen/landTeamLeftMargin"
+                    android:orientation="horizontal">
 
-                    <TextView
-                        style="@style/titleScoreCardStyle"
-                        android:layout_marginLeft="@dimen/teamBScoreLeftMargin"
-                        android:textColor="@color/teamBcolor"
-                        android:text="@string/runs" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical">
 
-                    <TextView
-                        android:id="@+id/aus_runs"
-                        style="@style/finalScoreCardStyle"
-                        android:layout_marginLeft="15dp"
-                        android:textColor="@color/teamBcolor"
-                        android:text="@string/noOfRuns" />
-                </LinearLayout>
+                        <TextView
+                            style="@style/titleScoreCardStyle"
+                            android:layout_marginLeft="@dimen/landScoreLeftMargin"
+                            android:text="@string/runs"
+                            android:textColor="@color/teamBcolor" />
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="5dp"
-                    android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/aus_runs"
+                            style="@style/finalScoreCardStyle"
+                            android:layout_marginLeft="@dimen/landRunsLeftMargin"
+                            android:text="@string/noOfRuns"
+                            android:textColor="@color/teamBcolor" />
+                    </LinearLayout>
 
-                    <TextView
-                        style="@style/titleScoreCardStyle"
-                        android:layout_marginLeft="@dimen/teamBScoreLeftMargin"
-                        android:textColor="@color/teamBcolor"
-                        android:text="@string/fours" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical">
 
-                    <TextView
-                        android:id="@+id/aus_fours"
-                        style="@style/finalScoreCardStyle"
-                        android:layout_marginLeft="20dp"
-                        android:textColor="@color/teamBcolor"
-                        android:text="@string/noOfFours" />
-                </LinearLayout>
+                        <TextView
+                            style="@style/titleScoreCardStyle"
+                            android:layout_marginLeft="@dimen/landScoreLeftMargin"
+                            android:text="@string/fours"
+                            android:textColor="@color/teamBcolor" />
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="5dp"
-                    android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/aus_fours"
+                            style="@style/finalScoreCardStyle"
+                            android:layout_marginLeft="@dimen/landScoreLeftMargin"
+                            android:text="@string/noOfFours"
+                            android:textColor="@color/teamBcolor" />
+                    </LinearLayout>
 
-                    <TextView
-                        style="@style/titleScoreCardStyle"
-                        android:layout_marginLeft="@dimen/teamBScoreLeftMargin"
-                        android:textColor="@color/teamBcolor"
-                        android:text="@string/sixes" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical">
 
-                    <TextView
-                        android:id="@+id/aus_sixes"
-                        style="@style/finalScoreCardStyle"
-                        android:layout_marginLeft="20dp"
-                        android:textColor="@color/teamBcolor"
-                        android:text="@string/noOfSixes" />
+                        <TextView
+                            style="@style/titleScoreCardStyle"
+                            android:layout_marginLeft="@dimen/landScoreLeftMargin"
+                            android:text="@string/sixes"
+                            android:textColor="@color/teamBcolor" />
+
+                        <TextView
+                            android:id="@+id/aus_sixes"
+                            style="@style/finalScoreCardStyle"
+                            android:layout_marginLeft="@dimen/landScoreLeftMargin"
+                            android:text="@string/noOfSixes"
+                            android:textColor="@color/teamBcolor" />
+                    </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
-    </LinearLayout>
 
-    <Button
-        style="@style/resetButtonStyle"
-        android:layout_alignParentBottom="true"
-        android:layout_centerInParent="true"
-        android:onClick="reset"
-        android:text="@string/reset" />
-</RelativeLayout>
+        <Button
+            style="@style/resetButtonStyle"
+            android:layout_alignBottom="@id/horizontal_layout"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:onClick="reset"
+            android:text="@string/reset" />
+    </RelativeLayout>
+</ScrollView>
